@@ -17,9 +17,9 @@ create table Team
 Id int identity(1,1) not null,
 TeamName nvarchar(50) not null,
 LigId int not null,
-	[CreateDate] DATETIME2(7) NOT NULL,
-	[UpdateDate] DATETIME2(7) NULL,
-	[DeleteDate] DATETIME2(7) NULL,
+[CreateDate] DATETIME2(7) NOT NULL,
+[UpdateDate] DATETIME2(7) NULL,
+[DeleteDate] DATETIME2(7) NULL,
 constraint PK_Team primary key (Id),
 constraint FK_Team_LigId foreign key (LigId) references Lig (Id)
 )
