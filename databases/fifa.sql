@@ -47,4 +47,5 @@ TeamId int not null,
 UniformNumber int not null,
 constraint PK_Player primary key (Id),
 constraint FK_Player_TeamId foreign key (TeamId) references Team (Id)
+
 )
