@@ -19,7 +19,6 @@ constraint PK_Artist primary key (Id)
 )
 
 
-
 create table Album
 (
 Id int identity(1,1) not null,
