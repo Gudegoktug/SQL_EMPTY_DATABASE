@@ -49,3 +49,14 @@ constraint PK_Player primary key (Id),
 constraint FK_Player_TeamId foreign key (TeamId) references Team (Id)
 
 )
+
+create table coach
+(
+Id int identity(1,1) not null,
+FirstName nvarchar(20) not null,
+LastName nvarchar(20) not null,
+TeamId int unique foreign key references Team(Id) not null,
+BirthDate datetime null,
+constraint PK_coach primary key (Id),
+
+)
