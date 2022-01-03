@@ -26,7 +26,6 @@ constraint FK_Team_LigId foreign key (LigId) references Lig (Id)
 
 create table TechnicalCrew
 (Id int identity(1,1) not null,
-Manager nvarchar(50) not null,
 AssistantCoach nvarchar(50) not null,
 TacticalAnalysisSpecialist nvarchar(50) not null,
 TeamDoctor nvarchar(50) not null,
